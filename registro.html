@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro para login con PHP | parzibyte.me</title>
+</head>
+
+<body>
+    <!-- Se va a procesar en registrar.php y se enviará por POST, no por GET-->
+    <form action="registrar.php" method="post">
+        <!--
+            Nota: el atributo name es importante, pues lo vamos a recibir de esa manera
+            en PHP
+        -->
+        <input required name="correo" type="email" placeholder="Tu correo electrónico">
+        <br><br>
+        <input required name="palabra_secreta" type="password" placeholder="Contraseña">
+        <br><br>
+        <input required name="palabra_secreta_confirmar" type="password" placeholder="Confirma tu contraseña">
+        <br><br>
+        <!--Lo siguiente envía el formulario-->
+        <input type="submit" value="Registrarme">
+    </form>
+    <a href="login.html">Ya tengo una cuenta</a>
+    <br><br><a href="//parzibyte.me">Creado por Parzibyte</a>
+</body>
+
+</html>
